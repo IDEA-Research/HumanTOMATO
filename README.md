@@ -16,7 +16,7 @@
   <a href='https://arxiv.org/pdf/2310.pdf'>
     <img src='https://img.shields.io/badge/Paper-PDF-yellow?style=flat&logo=arXiv&logoColor=yellow'>
   </a>
-  <a href='https://skzhang1.github.io/IDEAL/'>
+  <a href='https://https:lhchen.top/HumanTOMATO'>
   <img src='https://img.shields.io/badge/Project-Page-%23df5b46?style=flat&logo=Google%20chrome&logoColor=%23df5b46'></a>
   <a href='https://youtu.be/PcxUzZ1zg6o'>
   <img src='https://img.shields.io/badge/YouTube-Video-EA3323?style=flat&logo=youtube&logoColor=EA3323'></a>
