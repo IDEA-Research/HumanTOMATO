@@ -11,23 +11,23 @@
 
 <p align="center">
   <a href='https://arxiv.org/abs/2310.'>
-    <img src='https://img.shields.io/badge/Arxiv-2310-A42C25?style=flat&logo=arXiv&logoColor=A42C25'>
-  </a>
+  <img src='https://img.shields.io/badge/Arxiv-2310-A42C25?style=flat&logo=arXiv&logoColor=A42C25'>
+  </a> 
   <a href='https://arxiv.org/pdf/2310.pdf'>
-    <img src='https://img.shields.io/badge/Paper-PDF-yellow?style=flat&logo=arXiv&logoColor=yellow'>
-  </a>
-  <a href='https://https:lhchen.top/HumanTOMATO'>
-  <img src='https://img.shields.io/badge/Project-Page-%23df5b46?style=flat&logo=Google%20chrome&logoColor=%23df5b46'></a>
+  <img src='https://img.shields.io/badge/Paper-PDF-yellow?style=flat&logo=arXiv&logoColor=yellow'>
+  </a> 
+  <a href='https://lhchen.top/HumanTOMATO'>
+  <img src='https://img.shields.io/badge/Project-Page-%23df5b46?style=flat&logo=Google%20chrome&logoColor=%23df5b46'></a> 
   <a href='https://youtu.be/PcxUzZ1zg6o'>
-  <img src='https://img.shields.io/badge/YouTube-Video-EA3323?style=flat&logo=youtube&logoColor=EA3323'></a>
+  <img src='https://img.shields.io/badge/YouTube-Video-EA3323?style=flat&logo=youtube&logoColor=EA3323'></a> 
   <a href='https://github.com/IDEA-Research/HumanTOMATO'>
-    <img src='https://img.shields.io/badge/GitHub-Code-black?style=flat&logo=github&logoColor=white'></a>
+  <img src='https://img.shields.io/badge/GitHub-Code-black?style=flat&logo=github&logoColor=white'></a> 
   <a href='LICENSE'>
-    <img src='https://img.shields.io/badge/License-IDEA-blue.svg'>
-  </a>
+  <img src='https://img.shields.io/badge/License-IDEA-blue.svg'>
+  </a> 
   <a href="" target='_blank'>
-    <img src="https://visitor-badge.laobi.icu/badge?page_id=IDEA-Research.HumanTOMATO&left_color=gray&right_color=%2342b983">
-  </a>
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=IDEA-Research.HumanTOMATO&left_color=gray&right_color=%2342b983">
+  </a> 
 </p>
 
 # 🤩 Abstract
