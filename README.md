@@ -10,10 +10,10 @@
 <sup>3</sup>School of Data Science, The Chinese University of Hong Kong, Shenzhen (CUHK-SZ)
 
 <p align="center">
-  <a href='https://arxiv.org/abs/2310.'>
+  <a href='https://arxiv.org/abs/2310.12978'>
   <img src='https://img.shields.io/badge/Arxiv-2310-A42C25?style=flat&logo=arXiv&logoColor=A42C25'>
   </a> 
-  <a href='https://arxiv.org/pdf/2310.pdf'>
+  <a href='https://arxiv.org/pdf/2310.12978pdf'>
   <img src='https://img.shields.io/badge/Paper-PDF-yellow?style=flat&logo=arXiv&logoColor=yellow'>
   </a> 
   <a href='https://lhchen.top/HumanTOMATO'>
