@@ -36,7 +36,7 @@
 > This work targets a novel text-driven whole-body motion generation task, which takes a given textual description as input and aims at generating high-quality, diverse, and coherent facial expressions, hand gestures, and body motions simultaneously. Previous works on text-driven motion generation tasks mainly have two limitations: they ignore the key role of fine-grained hand and face controlling in vivid whole-body motion generation, and lack a good alignment between text and motion. To address such limitations, we propose a <u>T</u>ext-aligned wh<u>O</u>le-body <u>M</u>otion gener<u>AT</u>i<u>O</u>n framework, named HumanTOMATO, which is the first attempt to our knowledge towards applicable holistic motion generation in this research area. To tackle this challenging task, our solution includes two key designs: (1) a <u>H</u>olistic <u>H</u>ierarchical VQ-VAE (aka H²VQ) and a Hierarchical-GPT for fine-grained body and hand motion reconstruction and generation with two structured codebooks; and (2) a pre-trained text-motion-alignment model to help generated motion align with the input textual description explicitly. Comprehensive experiments verify that our model has significant advantages in both the quality of generated motions and their alignment with text.
 
 
-### Codes will be released step by step in following months!
+**Codes will be released step by step in following months!**
 
 
 # 📢 News
@@ -70,7 +70,7 @@ If you find the code is useful in your research, please cite us:
 @article{humantomato,
   title={HumanTOMATO: Text-aligned Whole-body Motion Generation},
   author={Lu, Shunlin and Chen, Ling-Hao and Zeng, Ailing and Lin, Jing and Zhang, Ruimao and Zhang, Lei and Shum, Heung-Yeung},
-  journal={Arxiv},
+  journal={arxiv:2310.12978},
   year={2023}
 }
 ```
@@ -85,4 +85,4 @@ This code is distributed under an [IDEA LICENSE](LICENSE). Note that our code de
 The code is on the basis of [TMR](https://github.com/Mathux/TMR), [MLD](https://github.com/ChenFengYe/motion-latent-diffusion), [T2M-GPT](https://github.com/Mael-zys/T2M-GPT), and [HumanML3D](https://github.com/EricGuo5513/HumanML3D). Thanks to all contributors!
 
 
-If you have any question, please contact at: shunlinlu0803 [AT] gmail [DOT] com AND thu [DOT] lhchen [AT] gamil [DOT] com.
+If you have any question, please contact at: shunlinlu0803 [AT] gmail [DOT] com AND thu [DOT] lhchen [AT] gmail [DOT] com.
