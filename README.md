@@ -79,10 +79,16 @@ If you find the code is useful in your research, please cite us:
 
 This code is distributed under an [IDEA LICENSE](LICENSE). Note that our code depends on other libraries and datasets which each have their own respective licenses that must also be followed.
 
-
 ## 💋 Acknowledgement
 
 The code is on the basis of [TMR](https://github.com/Mathux/TMR), [MLD](https://github.com/ChenFengYe/motion-latent-diffusion), [T2M-GPT](https://github.com/Mael-zys/T2M-GPT), and [HumanML3D](https://github.com/EricGuo5513/HumanML3D). Thanks to all contributors!
 
+## 🌟 Star History
+
+<p align="center">
+    <a href="https://star-history.com/#IDEA-Research/HumanTOMATO&Date" target="_blank">
+        <img width="500" src="https://api.star-history.com/svg?repos=IDEA-Research/HumanTOMATO&type=Date" alt="Star History Chart">
+    </a>
+<p>
 
 If you have any question, please contact at: shunlinlu0803 [AT] gmail [DOT] com AND thu [DOT] lhchen [AT] gmail [DOT] com.
