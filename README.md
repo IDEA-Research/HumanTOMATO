@@ -41,6 +41,7 @@
 
 # 📢 News
 
+- **[2023/11/15] Publish HumanTOMATO Motion Representation processing code.**
 - **[2023/10/22] Publish project!**
 
 # 🎬 Highlight Whole-body Motions
