@@ -1,8 +1,8 @@
-# 🚀 How to use tomato representation?
+# 🍅 How to use tomato representation?
 
-This instruction is for creating the Motion Representation with the [Tomato](https://arxiv.org/pdf/2310.12978.pdf) format. The tomato format is extended from the [H3D](https://github.com/EricGuo5513/HumanML3D) format and is different from it. We name it `Tomato Representaion` for convenience. For detailed ablation on motion representation design choice, please refer to the Appendix B.1 in the [paper](https://arxiv.org/pdf/2310.12978.pdf) format. 
+This instruction is for creating the Motion Representation with the [Tomato](https://arxiv.org/pdf/2310.12978.pdf) format. The tomato format is extended from the [H3D](https://github.com/EricGuo5513/HumanML3D) format and is different from it. We name it `Tomato Representation` for convenience. For detailed ablation on motion representation design choice, please refer to Appendix B.1 in the [paper](https://arxiv.org/pdf/2310.12978.pdf). 
 
-## 1. Data Preparation
+## 🚀  Data Preparation
 
 
 <details>
@@ -50,7 +50,7 @@ Please follow the instruction of [Motion-X](https://github.com/IDEA-Research/Mot
 </details>
 
 
-## 2. Data Processing
+## 🔧 Data Processing
 (1) get joints positions
 ```
 python raw_pose_processing.py
@@ -59,7 +59,18 @@ python raw_pose_processing.py
 ```
 python motion_representation.py
 ```
-(3) visualization for checking. The output dimension should be 623. 
+(3) visualization for checking. The output dimension of motions (one frame) should be 623. 
 ```
 python plot_3d_global.py
+```
+
+# 🤝🏼 Citation
+If you use the tomato format, please consider to cite us as: 
+```bash
+@article{humantomato,
+  title={HumanTOMATO: Text-aligned Whole-body Motion Generation},
+  author={Lu, Shunlin and Chen, Ling-Hao and Zeng, Ailing and Lin, Jing and Zhang, Ruimao and Zhang, Lei and Shum, Heung-Yeung},
+  journal={arxiv:2310.12978},
+  year={2023}
+}
 ```
