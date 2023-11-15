@@ -1,3 +1,46 @@
+# coding=utf-8
+# Copyright 2022 The IDEA Authors (Shunlin Lu and Ling-Hao Chen). All rights reserved.
+#
+# For all the datasets, be sure to read and follow their license agreements,
+# and cite them accordingly.
+# If the unifier is used in your research, please consider to cite as:
+#
+# @article{humantomato,
+#   title={HumanTOMATO: Text-aligned Whole-body Motion Generation},
+#   author={Lu, Shunlin and Chen, Ling-Hao and Zeng, Ailing and Lin, Jing and Zhang, Ruimao and Zhang, Lei and Shum, Heung-Yeung},
+#   journal={arxiv:2310.12978},
+#   year={2023}
+# }
+#
+# @InProceedings{Guo_2022_CVPR,
+#     author    = {Guo, Chuan and Zou, Shihao and Zuo, Xinxin and Wang, Sen and Ji, Wei and Li, Xingyu and Cheng, Li},
+#     title     = {Generating Diverse and Natural 3D Human Motions From Text},
+#     booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+#     month     = {June},
+#     year      = {2022},
+#     pages     = {5152-5161}
+# }
+#
+# Licensed under the IDEA License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     https://github.com/IDEA-Research/HumanTOMATO/blob/main/LICENSE
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License. We provide a license to use the code, 
+# please read the specific details carefully.
+#
+# ------------------------------------------------------------------------------------------------
+# Copyright (c) Chuan Guo.
+# ------------------------------------------------------------------------------------------------
+# Portions of this code were adapted from the following open-source project:
+# https://github.com/EricGuo5513/HumanML3D
+# ------------------------------------------------------------------------------------------------
+
 from common.quaternion import *
 import scipy.ndimage.filters as filters
 
@@ -15,8 +58,6 @@ class Skeleton(object):
         for chain in self._kinematic_tree:
             for j in range(1, len(chain)):
                 self._parents[chain[j]] = chain[j-1]
-        
-        # import pdb; pdb.set_trace()
 
     def njoints(self):
         return len(self._raw_offset)
@@ -60,13 +101,6 @@ class Skeleton(object):
     # face_joint_idx should follow the order of right hip, left hip, right shoulder, left shoulder
     # joints (batch_size, joints_num, 3)
     def inverse_kinematics_np(self, joints, face_joint_idx, smooth_forward=False):
-        '''
-        Input:
-            joints: (seq, joint, 3) global position of every joint
-            quat_params:    local rotation of every joint
-        Output:
-
-        '''
         
         assert len(face_joint_idx) == 4
         '''Get Forward Direction'''
@@ -75,7 +109,6 @@ class Skeleton(object):
         across2 = joints[:, sdr_r] - joints[:, sdr_l]
         across = across1 + across2
         across = across / np.sqrt((across**2).sum(axis=-1))[:, np.newaxis]
-        # print(across1.shape, across2.shape)
 
         # forward (batch_size, 3)
         forward = np.cross(np.array([[0, 1, 0]]), across, axis=-1)
