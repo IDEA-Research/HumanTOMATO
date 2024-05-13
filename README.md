@@ -36,11 +36,12 @@
 > This work targets a novel text-driven whole-body motion generation task, which takes a given textual description as input and aims at generating high-quality, diverse, and coherent facial expressions, hand gestures, and body motions simultaneously. Previous works on text-driven motion generation tasks mainly have two limitations: they ignore the key role of fine-grained hand and face controlling in vivid whole-body motion generation, and lack a good alignment between text and motion. To address such limitations, we propose a <u>T</u>ext-aligned wh<u>O</u>le-body <u>M</u>otion gener<u>AT</u>i<u>O</u>n framework, named HumanTOMATO, which is the first attempt to our knowledge towards applicable holistic motion generation in this research area. To tackle this challenging task, our solution includes two key designs: (1) a <u>H</u>olistic <u>H</u>ierarchical VQ-VAE (aka H²VQ) and a Hierarchical-GPT for fine-grained body and hand motion reconstruction and generation with two structured codebooks; and (2) a pre-trained text-motion-alignment model to help generated motion align with the input textual description explicitly. Comprehensive experiments verify that our model has significant advantages in both the quality of generated motions and their alignment with text.
 
 
-**Codes will be released step by step in following months!**
 
 
 # 📢 News
 
+- **[2024/05/13] Release OpenTMA project. It is exactly the text-motion alignment used in HumanTOMATO.**
+- **[2024/05/02] HumanTOMATO is accepted by ICML-2024. See you in Vienna!**
 - **[2023/11/15] Publish HumanTOMATO Motion Representation (`tomato` representation) processing code.**
 - **[2023/10/22] Publish project!**
 
