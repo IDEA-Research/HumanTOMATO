@@ -1,0 +1,95 @@
+NAME: MotionX-TMR-v1 # Experiment name
+DEBUG: False # Debug mode
+ACCELERATOR: 'gpu' # Devices optioncal: “cpu”, “gpu”, “tpu”, “ipu”, “hpu”, “mps, “auto”
+DEVICE: [0,1,2] # Index of gpus eg. [0] or [0,1,2,3]
+# DEVICE: [0] # Index of gpus eg. [0] or [0,1,2,3]
+
+# Training configuration
+TRAIN:
+  #---------------------------------
+  STAGE: temos # stage "vae" or "diffusion", "vae_diffusion"
+  #---------------------------------
+  DATASETS: ['motionx'] # Training datasets
+  NUM_WORKERS: 11 # Number of workers
+  BATCH_SIZE: 128 # Size of batches
+  START_EPOCH: 0 # Start epochMMOTIONENCODER
+  END_EPOCH: 4000 # End epoch
+  RESUME: '' # Resume training from this path
+  PRETRAINED_VAE: ''
+  PRETRAINED_MLD: ''
+  OPTIM:
+    TYPE: AdamW # Optimizer type
+    LR: 1e-4 # Learning rate
+
+# Evaluating Configuration
+EVAL:
+  DATASETS: ['motionx'] # Evaluating datasets
+  BATCH_SIZE: 32 # Evaluating Batch size
+  SPLIT: test
+
+# Test Configuration
+TEST:
+  PRETRAINED_CHECKPOINTS_VAE: ''
+  SAVE_PREDICTIONS: False
+  CHECKPOINTS: './experiments/temos/MotionX-TMR-v1/checkpoints/epoch=299.ckpt' # Pretrained model path
+  DATASETS: ['motionx'] # training datasets
+  SPLIT: test
+  BATCH_SIZE: 32 # training Batch size
+  MEAN: False
+  NUM_SAMPLES: 1
+  FACT: 1
+  # REPLICATION_TIM
+
+# Datasets Configuration
+DATASET:
+  JOINT_TYPE: 'motionx' # join type
+  VERSION: ''
+  MOTION_TYPE: 'vector_623'
+  TEXT_SOURCE: 'only_text_token'
+METRIC:
+  TYPE: ['TemosMetric', 'TM2TMetrics']
+# Losses Configuration
+LOSS:
+  TYPE: temos # Losses type
+  USE_INFONCE: True
+  USE_INFONCE_FILTER: True
+  LAMBDA_LATENT: 1.0e-5 # Lambda for latent Losses
+  LAMBDA_KL: 1.0e-5 # Lambda for kl Losses
+  LAMBDA_REC: 1.0 # Lambda for reconstruction Losses
+  LAMBDA_GEN: 1.0 # Lambda for text-motion generation losses
+  LAMBDA_CROSS: 1.0 # Lambda for reconstruction Losses
+  LAMBDA_CYCLE: 0.0 # Lambda for cycle Losses
+  LAMBDA_PRIOR: 0.0
+  LAMBDA_INFONCE: 0.1 # Lambda for infonce
+  INFONCE_TEMP: 0.1
+  DIST_SYNC_ON_STEP: False # Sync Losses on step when distributed trained
+  USE_RECLIPLOSS: False
+  SYNC: False
+  TRAIN_TMR: False
+
+# Model Configuration
+model:
+  vae: true # whether vae model
+  model_type: temos # model type
+  condition: 'text'
+  target: modules_temos
+  #####
+  latent_dim: 256 # latent dimension
+  ff_size: 1024 #
+  num_layers: 4 # number of layers
+  num_head: 6 # number of head layers
+  dropout: 0.1 # dropout rate
+  activation: gelu # activation type
+  eval_text_encode_way: glove_6B_GRU
+  eval_text_source: caption
+
+# Logger configuration
+LOGGER:
+  SAVE_CHECKPOINT_EPOCH: 100
+  LOG_EVERY_STEPS: 1
+  VAL_EVERY_STEPS: 100
+  TENSORBOARD: True
+  WANDB:
+    PROJECT: null
+    OFFLINE: False
+    RESUME_ID: null

@@ -1,0 +1,13 @@
+textencoder:
+  name: distilbert_actor
+  target: tma.models.architectures.temos.textencoder.distillbert_actor.DistilbertActorAgnosticEncoder
+  params:
+    latent_dim: ${model.latent_dim}
+    vae: ${model.vae}
+    ff_size: ${model.ff_size}
+    num_layers: ${model.num_layers}
+    num_head: ${model.num_head}
+    droupout: ${model.dropout}
+    activation: ${model.activation}
+    finetune: false
+    modelpath: ${model.bert_path}

@@ -1,0 +1,11 @@
+motiondecoder:
+  name: actor_decoder
+  target: tma.models.architectures.temos.motiondecoder.actor.ActorAgnosticDecoder
+  params:
+    latent_dim: ${model.latent_dim}
+    ff_size: ${model.ff_size}
+    num_layers: ${model.num_layers}
+    num_head: ${model.num_head}
+    droupout: ${model.dropout}
+    activation: ${model.activation}
+    nfeats: ${DATASET.NFEATS}
